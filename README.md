@@ -1,4 +1,6 @@
-## API3 Hackathon - Getting Started
+## Getting Started with Sportmonks F1 Airnode
+
+This repo contains some basic contracts and scripts to get started with using Sportmonks F1 Airnode.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -8,21 +10,11 @@
 
 [API3 Discord](https://discord.com/channels/758003776174030948/765618225144266793)
 
-## Getting Started with API3
-
-This repo contains some basic contracts and scripts to get started with using and integrating API3's first-party oracles. This repo contains guides for:
-
-- [QRNG](https://docs.api3.org/reference/qrng/)
-
-- [Airnode](https://docs.api3.org/reference/airnode/latest/understand/)
-
-- [dAPIs](https://docs.api3.org/reference/dapis/understand/)
-
 ## Installation and Setup
 
 Clone the repo:
 ```shell
-git clone https://github.com/api3-ecosystem/getting-started.git && cd getting-started
+git clone https://github.com/api3-ecosystem/sportmonks-example.git && cd sportmonks-example
 ```
 
 To install all the dependencies, run the following command:
@@ -120,48 +112,3 @@ you can use other endpoints apart from [Track Winners by Season ID](https://docs
 | 0x6e58ace4ab94d28da59ec1da675b513cc21a3ca9656228c0b052563a2eb88b3e | GET Track Winners by Season ID    |
 
 when choosing a different endpointId make sure to modify the [`/scripts/request_rrp.js`](https://github.com/api3-ecosystem/getting-started/blob/3ba99782013dd98513f0a16db36138da1a6eaeaa/scripts/request_rrp.js) script with the approriate endpointId and params
-
-## QRNG - Quantum Random Number Generator
-
-Please follow the setup instructions [here](#installation-and-setup) before going forward
-
-To request random numbers you first need to deploy a qrng requester contract. run the following command to deploy a qrng requester:
-```
-yarn deploy-qrng-requester
-```
-
-To use the QRNG services, you'll first have to fund the `sponsorWallet` that will cover the gas cost of the fulfillment of the request. To read more about how QRNG works, [click here](https://docs.api3.org/guides/qrng/). To fund your `sponsorWallet`, run:
-
-```shell
-yarn fund-qrng
-```
-
-To request a single random number from the QRNG Airnode:
-    
-```shell
-yarn request-qrng:uint256
-```
-
-To request an array of random numbers:
-
-```shell
-yarn request-qrng:array
-```
-
-## API3 dAPIs - Price feeds
-
-Please follow the setup instructions [here](#installation-and-setup) before going forward
-
-Run the following command to deploy a dAPI price reader:
-```shell
-yarn deploy-dapi-reader
-```
-
-Check out [this guide](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/) to learn how to subscribe to self-funded dAPIs.
- To read the price of an asset from the API3 dAPIs, make sure to set your proxy address during deployment and run:
-
-```shell
-yarn read-dapi
-```
-
-You can also check [this guide](https://docs.api3.org/guides/dapis/read-a-dapi/) on how to read from a dAPI Proxy.

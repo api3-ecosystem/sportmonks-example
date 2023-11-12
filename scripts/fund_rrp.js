@@ -35,8 +35,8 @@ const amounts = {
   'arbitrum-testnet': { value: 0.01, unit: 'ETH' },
 };
 
-  const airnodeAddress = "0xB0B2C57c67aB89c3c65480C4aDE37b66d418c68e";
-  const airnodeXpub = "xpub6C9hFCLsUsU1dPMDaf5cDKiFwxUsET6zmAHxqLWaUBW2jJejjW2GpAxMY4HAeHkBGxeu9hdSyDoLJM7R23jGTfYekWjMcLvtvzrKszarDGY";
+  const airnodeAddress = "0x750eA4B9515c3757661A006C945Af33bbe0A9f91";
+  const airnodeXpub = "xpub6Bn1nb3T1Sb3GDuJSStALbvokzTykfLVz6LnfecQ5TZENHFSy8vgS4yKTd6krP5hNYCJedxVQ1FUFCsCLx1sKSYkwiKey4EesbyHMgH11pt";
   const account = (await hre.ethers.getSigners())[0];
   const RrpRequester = await hre.deployments.get('RrpRequester');
   const RrpRequesterContract = new hre.ethers.Contract(RrpRequester.address, RrpRequester.abi, account);

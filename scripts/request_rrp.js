@@ -12,9 +12,9 @@ async function main() {
   );
 
   // Set the request parameters for your Airnode Request.
-  const airnodeAddress = "0xB0B2C57c67aB89c3c65480C4aDE37b66d418c68e";
+  const airnodeAddress = "0x750eA4B9515c3757661A006C945Af33bbe0A9f91";
   const airnodeXpub =
-    "xpub6C9hFCLsUsU1dPMDaf5cDKiFwxUsET6zmAHxqLWaUBW2jJejjW2GpAxMY4HAeHkBGxeu9hdSyDoLJM7R23jGTfYekWjMcLvtvzrKszarDGY";
+    "xpub6Bn1nb3T1Sb3GDuJSStALbvokzTykfLVz6LnfecQ5TZENHFSy8vgS4yKTd6krP5hNYCJedxVQ1FUFCsCLx1sKSYkwiKey4EesbyHMgH11pt";
   const endpointId =
     "0x6e58ace4ab94d28da59ec1da675b513cc21a3ca9656228c0b052563a2eb88b3e";
   const sponsor = RrpRequester.address;

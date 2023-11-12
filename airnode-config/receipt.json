@@ -1,18 +1,18 @@
 {
   "airnodeWallet": {
-    "airnodeAddress": "0xB0B2C57c67aB89c3c65480C4aDE37b66d418c68e",
-    "airnodeXpub": "xpub6C9hFCLsUsU1dPMDaf5cDKiFwxUsET6zmAHxqLWaUBW2jJejjW2GpAxMY4HAeHkBGxeu9hdSyDoLJM7R23jGTfYekWjMcLvtvzrKszarDGY"
+    "airnodeAddress": "0x750eA4B9515c3757661A006C945Af33bbe0A9f91",
+    "airnodeXpub": "xpub6Bn1nb3T1Sb3GDuJSStALbvokzTykfLVz6LnfecQ5TZENHFSy8vgS4yKTd6krP5hNYCJedxVQ1FUFCsCLx1sKSYkwiKey4EesbyHMgH11pt"
   },
   "deployment": {
-    "deploymentId": "aws3738e13d",
+    "deploymentId": "aws570d05ab",
     "cloudProvider": {
       "type": "aws",
       "region": "us-east-1",
       "disableConcurrencyReservations": true
     },
-    "stage": "salmon-camel",
-    "nodeVersion": "0.12.0",
-    "timestamp": "2023-10-24T03:03:08.050Z"
+    "stage": "ivory-coyote",
+    "nodeVersion": "0.13.0",
+    "timestamp": "2023-11-12T01:58:17.955Z"
   },
   "success": true
 }

@@ -8,7 +8,7 @@ if (fs.existsSync('./credentials.json')) {
 }
 
 module.exports = {
-  networks: { ...credentials.networks.mainnets, ...credentials.networks.testnets },
+  networks: { ...credentials.networks },
   solidity: {
     version: '0.8.9',
     settings: {

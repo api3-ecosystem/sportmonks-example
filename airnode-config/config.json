@@ -17,6 +17,53 @@
         "requesterAuthorizersWithErc721": [],
         "requesterEndpointAuthorizers": []
       },
+      "blockHistoryLimit": 200,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "80001",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "polygonMumbaiPublic": {
+          "url": "https://rpc-mumbai.maticvigil.com"
+        },
+        "polygonMumbaiTestnet1": {
+          "url": "${POLYGON_MUMBAI_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
       "blockHistoryLimit": 60,
       "contracts": {
         "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
@@ -79,13 +126,13 @@
     },
     "logFormat": "plain",
     "logLevel": "INFO",
-    "nodeVersion": "0.12.0",
+    "nodeVersion": "0.13.0",
     "oevGateway": {
       "corsOrigins": [],
       "enabled": true,
       "maxConcurrency": 20
     },
-    "stage": "salmon-camel"
+    "stage": "ivory-coyote"
   },
   "ois": [
     {
@@ -936,7 +983,7 @@
           ]
         }
       ],
-      "oisFormat": "2.1.0",
+      "oisFormat": "2.2.1",
       "title": "SportMonks Final",
       "version": "0.1.0"
     }

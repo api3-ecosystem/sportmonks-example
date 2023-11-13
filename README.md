@@ -36,15 +36,17 @@ For the Hackathon, we've integrated and deployed an Airnode for [SportMonks F1 A
 Please follow the setup instructions [here](#installation-and-setup) before going to step 2
 
 #### 2. Deploy the Requester contract
-run the following command to deply a requester contract
+run the following command to deploy a requester contract
 
 ```
 yarn deploy-rrp-requester
 ```
 
-this will deploy the RrpRequester contract. You can use this contract as a template to make calls to the sportsmonk API.
+this will deploy the `RrpRequester` contract. You can use this contract as a template to make calls to the Sportsmonk API.
 
-Once you run the command note down the RrpRequester address
+Make sure to change your RRP Address in the `deploy/deploy_RrpRequester.js` file. Check out the RRP Address for your chain [here](https://docs.api3.org/reference/airnode/latest/)
+
+Once you run the command note down the `RrpRequester` address.
 
 #### 3. Deriving the sponsorWallet and funding it
 
@@ -68,7 +70,7 @@ For the [GET Track Winners by Season ID](https://docs.sportmonks.com/formula-one
 
 You'll have to encode your API parameters using `@api3/airnode-abi` and pass them to the `makeRequest` function of the Airnode.
 
-For example, the the [GET Track Winners by Season ID](https://docs.sportmonks.com/formula-one/our-api/winners/get-track-winners-by-season-id) endpoint takes in a `seasonId` as a parameter. You would also have to specify the `_path` of the returned json object that needs to be picked up by the Airnode and `_type` specifies the datatype of the returned object.
+For example, the [GET Track Winners by Season ID](https://docs.sportmonks.com/formula-one/our-api/winners/get-track-winners-by-season-id) endpoint takes in a `seasonId` as a parameter. You would also have to specify the `_path` of the returned json object that needs to be picked up by the Airnode and `_type` specifies the datatype of the returned object.
 
 
 
@@ -80,7 +82,7 @@ const params = [
     ];
 ```
 
-the following params are then encoded in the [`/scripts/request_rrp.js`](https://github.com/api3-ecosystem/getting-started/blob/3ba99782013dd98513f0a16db36138da1a6eaeaa/scripts/request_rrp.js#L36) script before being used to make the request to the airnode. If you want to use different parameters or endpointIds you can modify the params object as needed.
+the following params are then encoded in the [`/scripts/request_rrp.js`](https://github.com/api3-ecosystem/getting-started/blob/3ba99782013dd98513f0a16db36138da1a6eaeaa/scripts/request_rrp.js#L36) script before being used to make the request to the airnode. If you want to use different parameters or `endpointIds` you can modify the params object as needed.
 
 run the following command to make the request:
 ```
@@ -90,7 +92,7 @@ this will make the request, within 100 seconds the sports monk airnode should re
 
 #### 5. Using different endpoints
 
-you can use other endpoints apart from [Track Winners by Season ID](https://docs.sportmonks.com/formula-one/our-api/winners/get-track-winners-by-season-id). Here is a list of endpoints and endpointIds
+you can use other endpoints apart from [Track Winners by Season ID](https://docs.sportmonks.com/formula-one/our-api/winners/get-track-winners-by-season-id). Here is a list of endpoints and `endpointIds`
 
 | endpointId                                                          | endpointName                      |
 |--------------------------------------------------------------------|----------------------------------|
@@ -111,4 +113,4 @@ you can use other endpoints apart from [Track Winners by Season ID](https://docs
 | 0x04437039d9785dce6043d591ced7866930670e6dc36c5ab11de860f20315a456 | GET Drivers By Season ID          |
 | 0x6e58ace4ab94d28da59ec1da675b513cc21a3ca9656228c0b052563a2eb88b3e | GET Track Winners by Season ID    |
 
-when choosing a different endpointId make sure to modify the [`/scripts/request_rrp.js`](https://github.com/api3-ecosystem/getting-started/blob/3ba99782013dd98513f0a16db36138da1a6eaeaa/scripts/request_rrp.js) script with the approriate endpointId and params
+when choosing a different `endpointId` make sure to modify the [`/scripts/request_rrp.js`](https://github.com/api3-ecosystem/getting-started/blob/3ba99782013dd98513f0a16db36138da1a6eaeaa/scripts/request_rrp.js) script with the appropriate `endpointId` and params

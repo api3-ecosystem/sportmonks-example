@@ -2,7 +2,7 @@ const hre = require("hardhat");
 const airnodeAdmin = require('@api3/airnode-admin');
 
 module.exports = async () => {
-    // AirnodeRRP Contract address. Get the address for your chain from the https://docs.api3.org/
+    // AirnodeRRP Contract address. Get the address for your chain from https://docs.api3.org/reference/airnode/latest/
     airnodeRrp = "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd";
     const RrpRequester = await hre.deployments.deploy("RrpRequester", {
         args: [airnodeRrp],

@@ -17,6 +17,241 @@
         "requesterAuthorizersWithErc721": [],
         "requesterEndpointAuthorizers": []
       },
+      "blockHistoryLimit": 30,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "31",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "rskPublic": {
+          "url": "https://rsk-testnet.reblok.io/public"
+        },
+        "rskTestnet1": {
+          "url": "${RSK_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 250,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "420",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 1000000000
+        }
+      },
+      "providers": {
+        "optimismGoerliPublic": {
+          "url": "https://goerli.optimism.io"
+        },
+        "optimismGoerliTestnet1": {
+          "url": "${OPTIMISM_GOERLI_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 60,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "1287",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "moonbaseAlphaPublic": {
+          "url": "https://rpc.api.moonbase.moonbeam.network"
+        },
+        "moonbaseAlphaTestnet1": {
+          "url": "${MOONBASE_ALPHA_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 800,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "4002",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "fantomPublic": {
+          "url": "https://rpc.testnet.fantom.network/"
+        },
+        "fantomTestnet1": {
+          "url": "${FANTOM_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 250,
+      "contracts": {
+        "AirnodeRrp": "0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"
+      },
+      "id": "43113",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "avalancheFujiPublic": {
+          "url": "https://api.avax-test.network/ext/bc/C/rpc"
+        },
+        "avalancheFujiTestnet1": {
+          "url": "https://rpc.ankr.com/avalanche_fuji"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
       "blockHistoryLimit": 200,
       "contracts": {
         "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
@@ -50,6 +285,100 @@
         },
         "polygonMumbaiTestnet1": {
           "url": "${POLYGON_MUMBAI_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 300,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "84531",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "baseGoerliPublic": {
+          "url": "https://goerli.base.org"
+        },
+        "baseGoerliTestnet1": {
+          "url": "${BASE_GOERLI_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 200,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "200101",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "milkomedaC1Public": {
+          "url": "https://rpc-devnet-cardano-evm.c1.milkomeda.com"
+        },
+        "milkomedaC1Testnet1": {
+          "url": "${MILKOMEDA_C1_TESTNET_1_PROVIDER_URL}"
         }
       },
       "type": "evm"
@@ -100,6 +429,194 @@
         }
       },
       "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 150,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "77",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "poaNetworkSokolPublic": {
+          "url": "https://sokol.poa.network"
+        },
+        "poaNetworkSokolTestnet1": {
+          "url": "${POA_NETWORK_SOKOL_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 250,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "97",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "bnbChainPublic": {
+          "url": "https://data-seed-prebsc-1-s1.binance.org:8545/"
+        },
+        "bnbChainTestnet1": {
+          "url": "${BNB_CHAIN_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 60,
+      "contracts": {
+        "AirnodeRrp": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"
+      },
+      "id": "11155111",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "sepoliaPublic": {
+          "url": "https://rpc-sepolia.rockx.com"
+        },
+        "sepoliaTestnet1": {
+          "url": "${SEPOLIA_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
+    },
+    {
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "authorizers": {
+        "crossChainRequesterAuthorizers": [],
+        "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": []
+      },
+      "blockHistoryLimit": 250,
+      "contracts": {
+        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+      },
+      "id": "421613",
+      "maxConcurrency": 50,
+      "minConfirmations": 0,
+      "options": {
+        "fulfillmentGasLimit": 2000000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPrice": {
+              "unit": "gwei",
+              "value": 10
+            },
+            "gasPriceStrategy": "constantGasPrice"
+          }
+        ],
+        "withdrawalRemainder": {
+          "unit": "wei",
+          "value": 0
+        }
+      },
+      "providers": {
+        "arbitrumGoerliPublic": {
+          "url": "https://goerli-rollup.arbitrum.io/rpc"
+        },
+        "arbitrumGoerliTestnet1": {
+          "url": "${ARBITRUM_GOERLI_TESTNET_1_PROVIDER_URL}"
+        }
+      },
+      "type": "evm"
     }
   ],
   "nodeSettings": {
@@ -132,7 +649,7 @@
       "enabled": true,
       "maxConcurrency": 20
     },
-    "stage": "ivory-coyote"
+    "stage": "coffee-crocodile"
   },
   "ois": [
     {

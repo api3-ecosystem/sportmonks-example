@@ -16,21 +16,21 @@ async function main() {
   const airnodeXpub =
     "xpub6Bn1nb3T1Sb3GDuJSStALbvokzTykfLVz6LnfecQ5TZENHFSy8vgS4yKTd6krP5hNYCJedxVQ1FUFCsCLx1sKSYkwiKey4EesbyHMgH11pt";
   const endpointId =
-    "0x6e58ace4ab94d28da59ec1da675b513cc21a3ca9656228c0b052563a2eb88b3e";
+    "0x5e411363a56d65ab806e2f6b1e01d0728d6548f9c8b39e64001b67ffe6c76ef9";
   const sponsor = RrpRequester.address;
   const sponsorWallet = await airnodeAdmin.deriveSponsorWalletAddress(
     airnodeXpub,
     airnodeAddress,
     sponsor
   );
+  
   console.log(`Sponsor wallet address: ${sponsorWallet}`);
   // Encode your API Params. Check out the docs for more info https://docs.api3.org/reference/airnode/latest/specifications/airnode-abi.html
   //   const params = [
   //     { type: 'string', name: 'param1', value: 'value1' }, { type: 'string', name: 'param2', value: 'value2' }, { type: 'string', name: '_path', value: '' }, { type: 'string', name: '_type', value: 'int256' }
   //     ];
   const params = [
-    { type: "string", name: "seasonID", value: "6" },
-    { type: "string", name: "_path", value: "data.0.id" },
+    { type: "string", name: "_path", value: "data.0.country_id" },
     { type: "string", name: "_type", value: "int256" },
   ];
   const encodedParameters = encode(params);

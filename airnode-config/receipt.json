@@ -4,15 +4,15 @@
     "airnodeXpub": "xpub6Bn1nb3T1Sb3GDuJSStALbvokzTykfLVz6LnfecQ5TZENHFSy8vgS4yKTd6krP5hNYCJedxVQ1FUFCsCLx1sKSYkwiKey4EesbyHMgH11pt"
   },
   "deployment": {
-    "deploymentId": "aws570d05ab",
+    "deploymentId": "aws4621fe5c",
     "cloudProvider": {
       "type": "aws",
       "region": "us-east-1",
       "disableConcurrencyReservations": true
     },
-    "stage": "ivory-coyote",
+    "stage": "coffee-crocodile",
     "nodeVersion": "0.13.0",
-    "timestamp": "2023-11-12T01:58:17.955Z"
+    "timestamp": "2023-11-13T06:12:43.147Z"
   },
   "success": true
 }
